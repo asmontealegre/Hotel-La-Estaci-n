@@ -1,0 +1,74 @@
+*{
+    font-family: "Courier new";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+:root{
+    --fondo:rgb(255, 255, 255);
+    --text1:#a0afb4;
+    --text2:#8ccedf; 
+}
+
+.container {
+    background: var(--fondo);
+    padding: 2rem;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.error {
+    width: 45rem;
+    background-position: center;
+    background-size: cover;
+}
+.text1 .text2{
+    font-size: 1.4rem;
+    color: var(--text1);
+    text-align: center;
+    font-weight: 100; 
+}
+
+.text1{
+    animation: animar .5s linear infinite;
+}
+@keyframes animar {
+    0%, 70%, 90%  {opacity: 0;} 
+    10%{opacity: .1;} 
+    50%{opacity: .5;} 
+    80%{opacity: .3;} 
+    100%{opacity: .6;}  
+}
+
+.text2{
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.num{
+    color:var(--text2);
+    font-weight: bold;
+    font-size: 5.1rem;
+}
+.btn{
+    padding: .7rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    background: var(--text2);
+    border-radius: .3rem;
+    color: var(--fondo);
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all .25s;
+}
+
+.btn:hover{
+    box-shadow: inset 9.5em 0 0 0 var(--text1) ;
+} 

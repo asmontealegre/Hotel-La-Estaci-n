@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sesion.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Registrarse</title>
+  </head>
+ 
+  <header class="fixed-top">
+    <nav  id="barra" class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid d-inline-flex ">
+        
+          <a class="nav-link" style="color:#191970 ; padding-top: 30px; " href="/HotelBosque/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" style="padding-bottom:5px;" width="25" height="25" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+              <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+            </svg>INICIO</a>
+                   <form class="d-flex">
+                  
+                  <a class="btn btn-outline-primary" id="btn" href="/HotelBosque/inicioSesion.html" type="submit"  role="button" >Volver</a>
+                </form>
+              </div> 
+            </div>
+            </div>
+        </nav>
+  </header> 
+   
+  <main class=" d-flex justify-content-center align-items-center vh-100" >
+    <div class="bg-white p-5 rounded-5 text-secondary" style="width:50rem ">
+      <div class="d-flex  justify-content-center">
+        <img src="/HotelBosque/img/logo.png" alt="login-icon" style="height: 10rem;" >
+      </div>
+      <div class="text-center fs-1 fw-bold">Registrarse</div>
+
+      <div class="container">
+        <form class="mt-4  row">
+          
+          <div class="d-flex gap-0 col-6" >
+            
+            
+            <input class="form-control " type="text"  placeholder= "Nombres"/>
+
+            
+          </div>
+
+          <div class=" d-flex  col-6">
+            
+            <input  type="text" class="form-control" id="apellidos"  placeholder= "Apellidos"/>
+          </div>
+
+       
+          <div class="d-flex gap-0   col-6 mt-3">
+          
+              <label for="tipoInput" class="form-label"></label>
+              <select class="form-select" name="PQR" required id="tipoInput">
+                <option value="">Tipo de Documento</option>
+                <option value="TI">Tarjeta de Identidad</option>
+                <option value="CC">Cedula de Ciudadania</option>
+                <option value="CE">Cedula de Estranjería</option>
+                <option value="PP">Pasaporte </option>
+                
+              </select>
+          </div>
+          <div class="   col-6 mt-3">
+            <input type="text" class=" form-control" id="documento"  placeholder= "Documento">
+          </div>     
+
+          
+          <div class="  mt-3 col-6 ">
+              <input type="number" class="form-control" id="ceuluar" placeholder= "Celular">
+          </div>
+
+          <div class="   mt-3 col-6 ">
+              <input type="email" class=" form-control" id="correo"  placeholder= "Email">
+          </div> 
+
+        
+          <div class=" mt-3 col-6 ">
+              <input type="password" class="form-control" id="contraseña" placeholder= "Contraseña?">
+          </div>
+
+
+          <div class="wrapper mt-3 col-6 ">
+              <input  type="password" class=" form-control" name="" id=""  placeholder= "Confirmar Contraseña?"required>
+              <span><i class="fas fa-eye"></i></span  >
+          </div> 
+          
+
+          
+          <div class="col-12  mt-4">
+            <div class="form-check">
+                <input type="checkbox" id="checkterms" class="form-check-input"> 
+                <label for="checkterms" class="form-check-label">HE LEÍDO Y ACEPTO LOS<a href="/HotelBosque/terminos.html">TERMINOS Y CONDICIONES</a> </label>
+                <a href=""></a>
+            </div>
+        </form>    
+        <a class="text-center bg-primary  btn btn-info text-white mt-3 w-100" href="https://www.youtube.com/watch?v=Urwk4XD_2k4" >Registrarse</a>
+</main>
+
+  
+    <!--footer-->
+    <footer class="footer mt-auto py-3 bg-light; text-center" id="footer">
+      <div class="container"><span class="tex-muted">© Hotel el Bosque-2022
+          <script>document.write(new Date().getFullYear())</script>
+      </span></div>
+  </footer>
+
+
+
+ 
+<link rel="stylesheet" href="js/bootstrap.min.js">
+</body>
+</html>
